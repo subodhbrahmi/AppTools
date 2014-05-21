@@ -27,9 +27,6 @@ namespace Run
 
             return new string(outputstr);
         }
-        public void print(string name)
-        {
-            Console.WriteLine(name);
-        }
+
     }
 }

@@ -11,10 +11,12 @@ namespace Run
     {
         static void Main(string[] args)
         {
-
+            string inputstr;
             ReverseString rs = new ReverseString();
-            rs.print("testing");
-            Console.WriteLine(rs.RevStr("Subodh"));
+            Console.Write("Input String = ");
+            inputstr=Console.ReadLine();
+            //rs.print("testing");
+            Console.WriteLine("Reversed String = " + rs.RevStr(inputstr));
             Console.ReadKey();
 
         }
