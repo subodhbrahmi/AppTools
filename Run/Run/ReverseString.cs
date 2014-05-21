@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Run
 {
-    
 
     class ReverseString
     {
