@@ -14,6 +14,7 @@ namespace Run
 
             ReverseString rs = new ReverseString();
             rs.print("testing");
+            Console.WriteLine(rs.RevStr("Subodh"));
             Console.ReadKey();
 
         }

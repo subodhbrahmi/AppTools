@@ -10,21 +10,23 @@ namespace Run
 
     class ReverseString
     {
-        char[] inputstr, outputstr;
+        char[] inputstr;
+        char[] outputstr=new char[10];
         string reversed;
 
         public string RevStr(string name)
         {
             inputstr = name.ToCharArray();
-            for (int i = 0; i < name.Length; i++)
-            {
-                for (int j = name.Length-1; j >= 0; j--)
+            
+            
+                for (int i=0, j = name.Length-1; j >= 0; i++, j--)
                 {
+                    if (inputstr[j] == null)
+                        break;
                     outputstr[i] = inputstr[j];
                 }
-            }
 
-            return reversed;
+            return new string(outputstr);
         }
         public void print(string name)
         {
