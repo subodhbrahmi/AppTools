@@ -10,14 +10,17 @@ namespace Run
     class ReverseByWord
     {
         string[] InpStr=new string[10];
+        string OutStr;
 
-        public void RevStrWrd(string TestStr)
+        public string RevStrWrd(string TestStr)
         {
             //InpStr = TestStr.ToArray();
             //InpStr=TestStr.Split((string[]) null, StringSplitOptions.RemoveEmptyEntries);
             //InpStr = string.Join(" ", TestStr.Split(' ').Reverse());
-            Console.WriteLine(string.Join(" ",TestStr.Split(' ').Reverse()));
+            OutStr=string.Join(" ",TestStr.Split(' ').Reverse());
+            return OutStr;
             //Console.WriteLine(InpStr);
+
             
         }
     }
