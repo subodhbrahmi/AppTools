@@ -83,7 +83,7 @@ namespace ReadData_BPMRD
         {
             OpenFileDialog ofile = new OpenFileDialog();
             ofile.ShowDialog();
-            label3.Text = ofile.FileName;
+            label3.Text = ofile.FileName; ////
 
         }
     }
