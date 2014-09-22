@@ -16,7 +16,8 @@ namespace ReadData_BPMRD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Network_Operation_Metrics());
+            //Application.Run(new Network_Operation_Metrics());
+            Application.Run(new ReadBpmrd());
         }
     }
 }

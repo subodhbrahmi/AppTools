@@ -27,7 +27,7 @@ namespace ReadData_BPMRD
             try
             {
                 OracleConnection bpmrdconn = new OracleConnection();
-                bpmrdconn.ConnectionString = "Data Source=EDGDCMT.DB.ATT.COM;User ID=sb834g;Password=Arthur@80;Unicode=True";
+                bpmrdconn.ConnectionString = "Data Source=EDGDCMT.DB.ATT.COM;User ID=sb834g;Password=Samsung@2014;Unicode=True";
                 bpmrdconn.Open();
                 ConnStat.Text = "Connected to BPMRD TEST !!!";
             }
@@ -48,7 +48,7 @@ namespace ReadData_BPMRD
             try
             {
                 OracleConnection bpmrdconn = new OracleConnection();
-                bpmrdconn.ConnectionString = "Data Source=EDGDCMT.DB.ATT.COM;User ID=sb834g;Password=Arthur@80;Unicode=True";
+                bpmrdconn.ConnectionString = "Data Source=EDGDCMT.DB.ATT.COM;User ID=sb834g;Password=Samsung@2014;Unicode=True";
                 bpmrdconn.Open();
                 ConnStat.Text = "Connected to BPMRD TEST !!!";
 
@@ -66,6 +66,24 @@ namespace ReadData_BPMRD
             {
                 MessageBox.Show(ex.ToString());
             }
+
+        }
+
+        private void ReadBpmrd_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Upload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofile = new OpenFileDialog();
+            ofile.ShowDialog();
+            label3.Text = ofile.FileName; ////
 
         }
     }
