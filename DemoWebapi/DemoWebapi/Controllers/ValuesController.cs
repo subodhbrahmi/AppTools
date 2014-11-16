@@ -38,6 +38,7 @@ namespace DemoWebapi.Controllers
                 db.SaveChanges();
 
             }
+            catch (Exception) { }
         }
 
         // PUT api/values/5
